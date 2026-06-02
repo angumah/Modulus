@@ -25,7 +25,7 @@ a:visited {
 
 /* Even sections */
 .section:nth-child(even) {
-    background-color: #9999a1;
+    background-color: #0b0b0b;
     color: #f4f4f6;
 }
 
@@ -34,7 +34,7 @@ a:visited {
 }
 
 .section:nth-child(even) .content_card{
-    background-color: #7b7b87;
+    background-color: #232326;
 }
 .section_header{
     text-align: center;
