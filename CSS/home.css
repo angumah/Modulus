@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    background-color: #0d0d0d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #E6E6E9;
+}
+.section {
+    min-height: 50vh;
+    width: 100%;
+    padding: 4rem 2rem;
+    box-sizing: border-box;
+}
+
+/* Odd sections */
+.section:nth-child(odd) {
+    background-color: #0d0d0d;
+}
+
+/* Even sections */
+.section:nth-child(even) {
+    background-color: #232326;
+}
+
+.section_header{
+    text-align: center;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+#founder_image{
+    display: block;
+    border-radius: 100%;
+    width: 80px;
+    max-width: 100%;
+    height: 80px;
+    margin: 0 auto;
+}
