@@ -1,11 +1,11 @@
 body{
     margin: 0;
-    background-color: #0d0d0d;
+    background-color: #040404;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #E6E6E9;
+    color: #f4f4f6;
 }
 .section {
-    min-height: 50vh;
+    min-height: 120vh;
     width: 100%;
     padding: 4rem 2rem;
     box-sizing: border-box;
@@ -13,24 +13,55 @@ body{
 
 /* Odd sections */
 .section:nth-child(odd) {
-    background-color: #0d0d0d;
+    background-color: #040404;
 }
 
 /* Even sections */
 .section:nth-child(even) {
-    background-color: #232326;
+    background-color: #9999a1;
+    color: #f4f4f6;
 }
 
 .section_header{
     text-align: center;
 }
-#header{
+#header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: rgba(29, 29, 29, 0.8);
+    border: solid #F4F4F6;
+    border-radius: 30px;
+    border-width: 0.5px;
+
+    max-width: 950px;
+    width: calc(100% - 40px);
+
+    max-height: 30px;
+
     display: flex;
+    padding: 0rem 1rem 1rem 1rem;
+
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
     flex-wrap: wrap;
+
+    z-index: 1000;
 }
+
+#band_animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Resources/photo-1548983965-416c1920352e.avif');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 950px;
+}
+
 
 #founder_image{
     display: block;
@@ -38,5 +69,15 @@ body{
     width: 80px;
     max-width: 100%;
     height: 80px;
+    margin: 0 auto;
+}
+#founder_description{
+    display: block;
+    text-align: center;
+    background-color: #232326;
+    border:solid #F4F4F6;
+    border-width: 0.5px;
+    border-radius: 10px;
+    max-width: 400px;
     margin: 0 auto;
 }
